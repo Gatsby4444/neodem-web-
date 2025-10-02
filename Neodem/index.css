@@ -1,0 +1,97 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #0055ff, #ffffff, #ff0000);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* Animation du fond dégradé */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+main h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+main p {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+/* Boutons */
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  background: white;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 10px;
+}
+
+.insta-logo {
+  width: 32px;
+  height: 32px;
+  filter: invert(1); /* logo blanc sur fond coloré */
+  transition: transform 0.2s;
+}
+
+.insta-logo:hover {
+  transform: scale(1.2);
+}
