@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   font-family: Arial, sans-serif;
   color: white;
-  background: linear-gradient(135deg, #0055ff, #ffffff, #ff0000);
+  background: linear-gradient(135deg, #00b679, #ffffff, #ff004c);
   background-size: 200% 200%;
   animation: gradientShift 10s ease infinite;
 }
@@ -54,6 +54,7 @@ main p {
   line-height: 1.6;
   font-size: 1.2em;
   margin-bottom: 40px;
+  color: black;
 }
 
 /* Boutons */
